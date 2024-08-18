@@ -16,5 +16,9 @@ def procesar_sentencias(a,b,c = True):
     sentencia3 = a and b or c # a and b or c or (b and a)
     sentencia4 = True # a == True or b == False
     print(sentencia0)
+    print(sentencia1)
+    print(sentencia2)
+    print(sentencia3)
+    print(sentencia4)
 
 procesar_sentencias(False,True)
