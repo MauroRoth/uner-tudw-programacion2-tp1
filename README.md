@@ -1,7 +1,6 @@
 # uner-tudw-programacion2-tp1
 
 Trabajo Práctico Nº 1 de la Asignatura Programación 2 en la Tecnicatura Universitaria en Desarrollo Web de la Universidad Nacional de Entre Ríos
-`<a name="br1"></a>`
 
 **TRABAJO PRÁCTICO Nº 1 – INTRODUCCIÓN A PYTHON**
 
@@ -23,19 +22,13 @@ Programación Orientada a Objetos.
 
 **CONDICIONES DE ENTREGA**
 
-•
-
 El Trabajo Práctico deberá ser:
 
-o
-
-Realizado en forma **grupal, en equipos de entre 3 (tres) y 5 (cinco)**
+1. Realizado en forma **grupal, en equipos de entre 3 (tres) y 5 (cinco)**
 
 **alumnos**.
 
-o
-
-Cargado en la sección del Campus Virtual correspondiente, en un archivo 7z,
+* Cargado en la sección del Campus Virtual correspondiente, en un archivo 7z,
 
 ZIP o RAR (o cualquier otro tipo de comprimido) con las soluciones a cada
 
