@@ -3,9 +3,14 @@
 # en caso contrario.
 
 def es_abc(palabra):
+    palabra = palabra.lower()
+    a,b = 'áéíóúü','aeiouu'
+    trans = str.maketrans(a,b)
+    palabra = palabra.translate(trans)
+    
     if list(palabra) == sorted(palabra):
         return True
     return False
 
-palabra = 'alícuota'
+palabra = 'alí'
 print(es_abc(palabra))

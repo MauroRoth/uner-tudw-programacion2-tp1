@@ -9,7 +9,7 @@
 # iii. a and b or c or (b and a)
 # iv. a == True or b == False
 
-def procesar_sentencias(a,b,c = True):
+def procesar_sentencias(a=False,b=False,c=False):
     sentencia0 = a and b # (a and b) or (b and a)
     sentencia1 = a or b # (a or b) or (b and c)
     sentencia2 = b and c # b and c or False

@@ -22,7 +22,7 @@ def fibonacci_repetitivo_1(numero):
         b = c
     return a
 
-def fibonacci_repetitivo_2(numero):
+def fibonacci_repetitivo_2(numero): 
     a = 0
     b = 1
     for i in range(numero):
@@ -30,15 +30,15 @@ def fibonacci_repetitivo_2(numero):
         a = b - a
     return a
 
-def fibonacci_formula_explicita(numero):
+def fibonacci_formula_explicita(numero): 
     if numero<2:
         return numero
     else:
-        phi = (1 + sqrt(5))/2 # número áureo
+        phi = (1 + sqrt(5))/2 # phi = número áureo
         j = (pow(phi,numero)-pow((1-phi),numero))/sqrt(5)
     return int(j)
 
-def fibonacci_repetitivo_vector(numero):
+def fibonacci_repetitivo_vector(numero): 
     if numero<2:
         return numero
     else:
@@ -49,7 +49,7 @@ def fibonacci_repetitivo_vector(numero):
             vector[i] = vector[i-1]+vector[i-2]
         return vector[i]
 
-def fibonacci_divideYvenceras(numero): # revisar porque no funciona
+def fibonacci_divideYvenceras(numero): 
     if numero<2:
         return numero
     i = numero - 1
@@ -62,10 +62,10 @@ def fibonacci_divideYvenceras(numero): # revisar porque no funciona
             auxOne = (d*b+c*a)
             auxTwo = (d*(b+a)+c*b)
             (a,b) = (auxOne,auxTwo)
-        auxOne = int(pow(c,2)) + int(pow(d,2))
+        auxOne = c*c + d*d
         auxTwo = d*(2*c+d)
         (c,d) = (auxOne,auxTwo)
-        i = i/2
+        i = i//2
     return a+b
     
 numero = int(input('Ingrese un número natural: '))
@@ -74,4 +74,4 @@ print("fibonacci repetitivo 1: ",fibonacci_repetitivo_1(numero))
 print("fibonacci repetitivo 2: ",fibonacci_repetitivo_2(numero))
 print("fibonacci fórmula explícita: ",fibonacci_formula_explicita(numero))
 print("fibonacci repetitivo vector: ",fibonacci_repetitivo_vector(numero))
-#print("fibonacci divide y vencerás: ",fibonacci_divideYvenceras(numero))
+print("fibonacci divide y vencerás: ",fibonacci_divideYvenceras(numero))

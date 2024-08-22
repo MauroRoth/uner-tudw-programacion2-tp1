@@ -20,4 +20,5 @@ def listas_diferencia(lista1,lista2):
 
 lista1 = ['b', 'a', 'c']
 lista2 = ['e', 'b', 'd', 'c']
-print(listas_diferencia(lista1,lista2))
+print(listas_diferencia(lista1,lista2)[0])
+print(listas_diferencia(lista1,lista2)[1])
