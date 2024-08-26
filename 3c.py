@@ -15,10 +15,15 @@ def procesar_sentencias(a=False,b=False,c=False):
     sentencia2 = b and c # b and c or False
     sentencia3 = a and b or c # a and b or c or (b and a)
     sentencia4 = True # a == True or b == False
-    print(sentencia0)
-    print(sentencia1)
-    print(sentencia2)
-    print(sentencia3)
-    print(sentencia4)
+    print('a and b = ', sentencia0)
+    print('a or b = ', sentencia1)
+    print('b and c = ', sentencia2)
+    print('a and b or c = ', sentencia3)
+    print('True = ', sentencia4)
 
-procesar_sentencias(False,True)
+print('Reducción de expresiones lógicas: ')
+print(50*'-')
+a,b,c = False, True, False
+print(f'a={a}, b={b}, c={c}')
+print(50*'-')
+procesar_sentencias(False,True,False)
